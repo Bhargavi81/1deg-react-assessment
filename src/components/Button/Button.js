@@ -28,7 +28,7 @@ const onClick = () => {};
  * @param type String of HTML <button> type (i.e. 'submit', 'button', ...) (optional)
  * @param badge Number that appears on the corner of the button in a circle (best with 2 digits or less) (optional)
  */
-function Button({ text, additionalClasses, styles, onButtonClick, type, badge = null }, ref) {
+function Button({ text, additionalClasses, styles, icon, onButtonClick, type, badge = null }, ref) {
   styles = Object.assign({}, defaultButtonStyles, styles || {});
   onButtonClick = onButtonClick && !styles?.disabled ? onButtonClick : onClick;
   const buttonClasses = [
@@ -78,6 +78,7 @@ function Button({ text, additionalClasses, styles, onButtonClick, type, badge = 
     <>
       <button ref={ref} style={buttonStyles()} disabled={styles?.disabled} className={[`${buttonClasses} ${classes.withText}`]} onClick={onButtonClick} type={type}>
         <span className={classes.buttonText}>{text}</span>
+       { icon && <span className={[`${buttonIconContainerClasses} `]} ><i className={icon} /></span> }
       </button>
     </>
   )

@@ -20,3 +20,16 @@
     color: #fff;
   }
 }
+.buttonText,
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  color: #fff;
+  height: 100%;
+  vertical-align: top;
+}
+
+.button-icon{
+  font-size: 1.6em;  
+}

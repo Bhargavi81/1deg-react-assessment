@@ -6,7 +6,13 @@ export const useAssessments = () => {
   const [userAssessments, setUserAssessments] = useState([]);
 
   // TODO - fetch the data from API
-  
+  useEffect(() => {
+    ODAS.get({ public: true }).then((data) => {
+      const assessmentData = data.assessments
+      setAssessments(assessmentData);
+    });
+  }, []);
+
   return {
     assessments: assessments,
     userAssessments: userAssessments
