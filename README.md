@@ -24,6 +24,12 @@ This project already includes react-bootstrap which can be used to complete the 
 When you are satisfied that your work is complete according to the requirements, please send an email to engineering@1degree.org and include a link to where you have uploaded the code (github link is preferred). 
 
 ------
+# Run application in the browser
+1. Clone the repository - https://github.com/Bhargavi81/1deg-react-assessment.git
+2. Go to the repository directory in your local
+3. run the commands, 'npm install' and 'npm start'
+4. Localhost url : http://localhost:3000/ to test after npm start
+--------
 
 # Getting Started with Create React App
 
