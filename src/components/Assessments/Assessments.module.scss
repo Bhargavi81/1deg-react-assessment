@@ -10,71 +10,20 @@
         margin: 0;
     }
 
-    .assessmentRow {
-        background: #fff;
-        margin: 10px 0;
-        padding: 20px;
-    }
-
-    .assessmentIcon {
-        border-radius: 4px;
-        margin: 8px 7px 0 5px;
-        text-align: center;
-        font-size: 26px;
-        color: #fff;
-        background-color: darkblue;
-
-        height: 40px;
-        padding: 2px 0 0 2px;
-
-        svg {
-            vertical-align: inherit;
-        }
-
-        &.health {
-            background-color: red;
-        }
-
-        &.food {
-            background-color: purple;
-        }
-
-        &.housing {
-            background-color: lightblue;
-        }
-
-
-    }
-
-    .assessmentContent {
-        text-align: left;
-
-        h3 {
-            font-size: 25px;
-            font-weight: bold;
-            color: #0089ffd6;
-            font-family: ui-sans-serif;
-            margin: 0;
-        }
-
-        div {
-            font-size: 16px;
-            color: #767474;
-        }
-    }
 }
 
 .customAlert {
-    width: 30rem;
+    width: 25rem;
     color: rgb(118, 116, 116);
     font-size: 0.8rem;
     position: fixed;
     top: 0px;
-    right: 0px;
-    padding: 10px;    
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    background: lightblue;
 
-    .customAlertHeading  {
-        font-size: 1.2rem;
+    .customAlertHeading {
+        font-size: 1.1rem;
     }
-
 }

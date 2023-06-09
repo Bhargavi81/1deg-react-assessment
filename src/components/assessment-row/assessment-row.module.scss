@@ -1,0 +1,21 @@
+.assessmentRow {
+    background: #fff;
+    margin-top: 2px;
+    padding: 15px 15px 15px 0;
+
+    .assessmentColButton{
+        text-align: right;
+    }
+
+} 
+
+@media (max-width: 768px) {
+    .assessmentRow {
+        .assessmentColButton{
+            text-align: center;
+            button {                    
+                width: 100% !important;
+            }
+        }           
+    }
+}

@@ -1,0 +1,36 @@
+.assessmentIcon {
+    border-radius: 4px;
+    margin: 8px 10px 0 0;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    background-color: darkblue;
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;        
+    height: 40px;
+    padding: 5px 0 0 2px;
+
+    svg {
+        vertical-align: inherit;
+    }
+
+    &.health {
+        background-color: red;
+    }
+
+    &.food {
+        background-color: purple;
+    }
+
+    &.housing {
+        background-color: lightblue;
+    }
+}
+
+@media (max-width: 998px) {
+    .assessmentIcon {
+        width: 13%;
+        margin-top: 15px;
+    }
+}
